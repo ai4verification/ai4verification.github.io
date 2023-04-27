@@ -100,11 +100,12 @@
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>成员介绍</h2>
-      <p><li> 甄慧玲：SAT项目群负责人 （ATPG、LEC、MC与逻辑综合）. </li></p>
-      <p><li> 肖文怡：LEC等证明自调优算法 </li></p>
-      <p><li> 罗万千：LEC提升建模性能</li></p>
-      <p><li> 黄俊华：LO化简加速</li></p>
-      <p><li> 殷力豪：MC建模方案</li></p>
+   All of us are working on SAT-related algorithms in EDA, such as Automatic Test Pattern Generation (ATPG), Logic Equivalence Checking (LEC), Model Checking (MC). We all focus on both modeling and solving in practice. 
+      <p><li> 甄慧玲：博士研究方向：Numerical PDE, large scale optimization, and large scale constraint optimization. Now she is working on incremental SAT solving, ATPG, approximation in BMC, ATPG for LEC, ets. </li></p>
+      <p><li> 肖文怡：博士研究方向: data mining, recommendation system. Now she is working on adaptive LEC algorithm, and graph embedding on EDA problems. </li></p>
+      <p><li> 罗万千：Master in CS. Now he is working on circuit SAT, parallel SAT solving, bandit for clause sharing, incremental LEC,adaptive modeling in LEC, etc. </li></p>
+      <p><li> 黄俊华：Master in combinatorial optimization. Now she is working on efficient reverse simulation in SAT sweeping, and related application in logic synthesis and LEC. </li></p>
+      <p><li> 殷力豪：博士研究方向：Applied mathematics and statistics. Now he is working on incremental MC algorithms, property grouping-based verification, latch correspondence, fix-point algorithm in PDR and word-level verification, etc. </li></p>
   </div>
 
 
@@ -122,7 +123,7 @@
         <h4><li>SAT发展时间线</li></h4>
         <img style="width:96%;" src="images/Timeline.png">
         <p class="w3-justify">
-	2010年以前： 1.少量工作对比了ATPG和SAT，并将ATPG用于LEC和MC中； 2.circuit-SAT的大部分工作都是将circuit信息放到CNF的推导中； 3. 基于SAT的证明方式主要进展集中于：preprocessing，增量求解等 ( 两种增量求解：a)增量SAT证明；b)cluster-based（bundle）); 4.Model checking开始引入word-level建模方式。
+	2020-2021：集中于SAT-based ATPG解决方案，包括incremental SAT-based modeling and cube-and-conquer-style solving. 我们发现了SAT和ATPG算法在证明上的差异性，以及不同建模方法对证明的影响，但截至到目前为止，都只有少量工作对比了ATPG和SAT，并将ATPG用于LEC和MC中； 2.circuit-SAT的大部分工作都是将circuit信息放到CNF的推导中； 3. 基于SAT的证明方式主要进展集中于：preprocessing，增量求解等 ( 两种增量求解：a)增量SAT证明；b)cluster-based（bundle）); 4.Model checking开始引入word-level建模方式。
 	 </p>
 	<p class="w3-justify">
 	2011-2017年： 1.SAT求解提出cube-and-conquer：在这个框架基础上，部分数据的并行证明性能优于串行证明； 2.SAT-based证明的改进集中在encoding上； 3.代数方法开始用于LEC的运算电路证明中； 4.LEC和MC开始出现learning-based证明方案： a)LEC：自适应方案选择 b)MC：learning MDP。	 </p> 
