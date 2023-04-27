@@ -116,22 +116,25 @@
     </p>
 
         <h4><li>真实的EDA问题的测试或者验证</li></h4>
-        <img style="width:96%;" src="images/AdderNet.jpg"> 
-        <p class="w3-justify">
-        <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2101.10015.pdf">Hardware Implementation</a>
-        </p>
-        <p class="w3-justify">
-        I would like to say, <span style="color:red">AdderNet is very cool!</span> The initial idea was came up in about 2017 when climbing with some friends at Beijing. By replacing all convolutional layers (except the first and the last layers), we now can obtain comparable performance on ResNet architectures. In addition, to make the story more complete, we recent release the hardware implementation and some quantization methods. The results are quite encouraging, we can reduce both <strong>the energy consumption and thecircuit areas significantly without affecting the performance</strong>. Now, we are working on more applications to reduce the costs of launching AI algorithms such as low-level vision, detection, and NLP tasks.
-        </p> 
+        <img style="width:96%;" src="images/process.png"> 
+
 
         <h4><li>SAT发展时间线</li></h4>
-        <img style="width:96%;" src="images/timeline.png"> 
+        <img style="width:96%;" src="images/Timeline.png"> 
 	  
         <p class="w3-justify">
 	2010年以前： 1.少量工作对比了ATPG和SAT，并将ATPG用于LEC和MC中； 2.circuit-SAT的大部分工作都是将circuit信息放到CNF的推导中； 3. 基于SAT的证明方式主要进展集中于：preprocessing，增量求解等 ( 两种增量求解：a)增量SAT证明；b)cluster-based（bundle）); 4.Model checking开始引入word-level建模方式。
 	 </p> 
 
-        <h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
+	<p class="w3-justify">
+	2011-2017年： 1.SAT求解提出cube-and-conquer：在这个框架基础上，部分数据的并行证明性能优于串行证明； 2.SAT-based证明的改进集中在encoding上； 3.代数方法开始用于LEC的运算电路证明中； 4.LEC和MC开始出现learning-based证明方案： a)LEC：自适应方案选择 b)MC：learning MDP。	 </p> 
+         </p> 
+
+	<p class="w3-justify">
+	2018年至今：1. 2018年提出NeuroSAT，后续几乎所有learning-based SAT都延续这个pipeline； 2. 2019年开始出现数据增广为核心的研究工作。2022年我们也分别尝试数据增广用于ATPG和LEC中； 3. 2022年提出从全局构建simulate DB，提高simulation质量，增强证明性能； 4. 2021-2022年Synopsys和Cadence分别有多个形式化验证相关的产品公开材料中以ML-driven框架为主要卖点之一。但主要将求解器当成黑盒，而主要工作用于动态调度、自适应求解器 or 算法选择上。         </p> 
+ 	</p> 
+
+	<h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
         <img style="width:32%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:60%;" src="images/video.gif">
         <p class="w3-justify">
         <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
