@@ -72,7 +72,7 @@
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
   <div class="w3-bar-item w3-padding-24">AI4Verification</div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-  </div>
+  <!-- </div> -->
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -87,9 +87,11 @@
 <!-- The Home Section -->
     <div class="w3-container w3-center w3-padding-32" id="home">
       <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/group_photo.png">
+      <img style="width: 40%;max-width: 120px" alt="profile photo" src="images/yuanmingxuan.png">
+      <img style="width: 40%;max-width: 220px" alt="profile photo" src="images/haojianye.png">
       <h1>AI4Verification</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          很多EDA应用都可以通过抽象成SAT问题后直接调用SAT求解器求解，包括模型检测（Model Checking）、逻辑综合（Logic Synthesis）、逻辑等价性验证（Logic Equivalence Checking）、自动测试向量生成（Automatic Test Pattern Generation）等。但是，高性能的SAT求解器往往不等价于实际EDA问题可以被高效解决，其中原因包括复杂约束场景下的高质量的编码（建模）方法、求解友好的化简手段、与数据匹配的求解器或者求解算法选择等。
+          Many EDA applications can be abstracted into SAT problems and then directly call the SAT solver to solve them, including Model Checking (MC), Logic Synthesis, Logic Equivalence Checking (LEC), Automatic Test Pattern Generation (ATPG), etc. However, high-performance SAT solvers are often not equivalent to the fact that the actual EDA problem can be solved efficiently. The reasons include high-quality coding (modeling) methods in complex constraint scenarios, solution-friendly simplification methods, and data-matched Solver or solution algorithm selection, etc. 
         </p>
         <p class="w3-center">
           <a href="mailto:Noah_AI4EDA@gmail.com">Email</a> 
@@ -100,43 +102,123 @@
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>成员介绍</h2>
-   All of us are working on SAT-related algorithms in EDA, such as Automatic Test Pattern Generation (ATPG), Logic Equivalence Checking (LEC), Model Checking (MC). We all focus on both modeling and solving in practice. 
-      <p><li> 甄慧玲：博士研究方向：Numerical PDE, large scale optimization, and large scale constraint optimization. Now she is working on incremental SAT solving, ATPG, approximation in BMC, ATPG for LEC, ets. </li></p>
-      <p><li> 肖文怡：博士研究方向: data mining, recommendation system. Now she is working on adaptive LEC algorithm, and graph embedding on EDA problems. </li></p>
-      <p><li> 罗万千：Master in CS. Now he is working on circuit SAT, parallel SAT solving, bandit for clause sharing, incremental LEC,adaptive modeling in LEC, etc. </li></p>
-      <p><li> 黄俊华：Master in combinatorial optimization. Now she is working on efficient reverse simulation in SAT sweeping, and related application in logic synthesis and LEC. </li></p>
-      <p><li> 殷力豪：博士研究方向：Applied mathematics and statistics. Now he is working on incremental MC algorithms, property grouping-based verification, latch correspondence, fix-point algorithm in PDR and word-level verification, etc. </li></p>
+   All of us are working on SAT-related algorithms in EDA, such as Automatic Test Pattern Generation (ATPG), Logic Equivalence Checking (LEC), Model Checking (MC). We all focus on both modeling and solving in practice.
+      <p><li> Dr. Mingxuan Yuan | <a style="color: #447ec9" href="https://dblp.org/pid/74/2356.html">DBLP</a>：PhD on data mining, data management, machine learning, etc. Now he is the project manager of AI4EDA in Noah's Ark Lab, Huawei. </li></p>
+      <p><li> Dr. Hui-Ling Zhen | <a style="color: #447ec9" href="https://scholar.google.com.hk/citations?user=gq29DtwAAAAJ&hl=zh-CN">google scholar</a>: PhD on Numerical PDE, large scale optimization, and large scale constraint optimization. Now she is working on incremental SAT solving, ATPG, approximation in BMC, ATPG for LEC, etc.</li></p>
+      <p><li> Dr. Wenyi Xiao | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=4sgCmJIAAAAJ&hl=en">google scholar</a>: PhD on data mining, recommendation system. Now she is working on adaptive LEC algorithm, and graph embedding on EDA problems. </li></p>
+      <p><li> Dr. Lihao Yin | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=bS9oH_oAAAAJ&hl=en">google scholar</a>: PhD on Applied mathematics and statistics. Now he is working on incremental MC algorithms, property grouping-based verification, latch correspondence, fix-point algorithm in PDR and word-level verification, etc. </li></p>
+      <p><li> Wanqian Luo | <a style="color: #447ec9" href="https://github.com/">Github</a>: luowanqian Master in CS. Now he is working on circuit SAT, parallel SAT solving, bandit for clause sharing, incremental LEC,adaptive modeling in LEC, etc. </li></p>
+      <p><li> Junhua Huang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=pFOIOJ0AAAAJ&hl=zh-CN">google scholar</a>: Master in combinatorial optimization. Now she is working on efficient reverse simulation in SAT sweeping, and related application in logic synthesis and LEC. </li></p>
+
+ <h4><li>Some of our kindly partners:</li></h4>
+      <p><li> Dr. Jianye Hao | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=FCJVUYgAAAAJ&hl=zh-CN">google scholar</a>: PhD on reinforcement learning and multi-agent system. Now he is the director of decision and reasoning lab of Noah's Ark Lab, Huawei. </li></p>
+      <p><li> Dr. Yu Huang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=acPTiEQAAAAJ&hl=en">google scholar</a>: PhD on DFT, and more than 20 years experience on industrial DFT, such as diagnosis, compression, compaction, scan chain test, etc. </li></p>
+      <p><li> Dr. Naixing Wang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=c_R21V8AAAAJ&hl=en">google scholar</a>: PhD on DFT. Several years experience on industrial DFT, such as ATPG, TPI, etc. </li></p>
+      <p><li> Yingxue Zhang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=4bsYpogAAAAJ&hl=en">google scholar</a>: Years of experience on graph networks and representation learning.  </li></p>
   </div>
 
 
 <!-- The Projects Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h2>Introduction</h2>
+    <h2>SAT in Industrial EDA Problems</h2>
     <p class="w3-justify">
-	    利用专家知识和数据驱动解决形式化验证瓶颈。
+	    Boolean Satisfiability (or called SAT for short) is the problem of determining if there exists an interpretation that satisfies a given Boolean formula. In other words, it asks whether the variables of a given Boolean formula can be consistently replaced by the values TRUE or FALSE in such a way that the formula evaluates to TRUE. If this is the case, the formula is called satisfiable, otherwise, it is unsatisfiable. Modern SAT solver depends on Conflict-driven Clause Learning (CDCL) algorithm. 
     </p>
 
-        <h4><li>真实的EDA问题的测试或者验证</li></h4>
-        <img style="width:96%;" src="images/process.png"> 
-
-
-        <h4><li>SAT发展时间线</li></h4>
+              <h4><li>Development of Boolean Satisfiability</li></h4>
         <img style="width:96%;" src="images/Timeline.png">
         <p class="w3-justify">
-	2020-2021：集中于SAT-based ATPG解决方案，包括incremental SAT-based modeling and cube-and-conquer-style solving. 我们发现了SAT和ATPG算法在证明上的差异性，以及不同建模方法对证明的影响，但截至到目前为止，都只有少量工作对比了ATPG和SAT，并将ATPG用于LEC和MC中； 2.circuit-SAT的大部分工作都是将circuit信息放到CNF的推导中； 3. 基于SAT的证明方式主要进展集中于：preprocessing，增量求解等 ( 两种增量求解：a)增量SAT证明；b)cluster-based（bundle）); 4.Model checking开始引入word-level建模方式。
-	 </p>
-	<p class="w3-justify">
-	2011-2017年： 1.SAT求解提出cube-and-conquer：在这个框架基础上，部分数据的并行证明性能优于串行证明； 2.SAT-based证明的改进集中在encoding上； 3.代数方法开始用于LEC的运算电路证明中； 4.LEC和MC开始出现learning-based证明方案： a)LEC：自适应方案选择 b)MC：learning MDP。	 </p> 
-         </p>
-	<p class="w3-justify">
-	2018年至今：1. 2018年提出NeuroSAT，后续几乎所有learning-based SAT都延续这个pipeline； 2. 2019年开始出现数据增广为核心的研究工作。2022年我们也分别尝试数据增广用于ATPG和LEC中； 3. 2022年提出从全局构建simulate DB，提高simulation质量，增强证明性能； 4. 2021-2022年Synopsys和Cadence分别有多个形式化验证相关的产品公开材料中以ML-driven框架为主要卖点之一。但主要将求解器当成黑盒，而主要工作用于动态调度、自适应求解器 or 算法选择上。         </p> 
- 	</p> 
+      Before 2012: Several research has been done on circuit SAT as well as the combination between ATPG and SAT. ATPG has shown certain advantage on solving sequential equivalence checking during the requirement-driven searching strategy and activity-based modeling method. In MC, word-level research has started. Intel has proposed a commerial ATPG engine with SAT-reasoning module. In ATPG, PASSAT has been proposed which enables the SAT-based ATPG in industrial applications. In LEC, bundle method (an incremental LEC method) has been proved the better efficiency. There are two major events: 1) one is that the SAT competition began to be normalized and is held every year after 2002; 2) the other one is that there is the  <strong> first patent</strong> (as far as our knowledge) for data-driven LEC engine, and it is worth mentioning that <strong> the improved data-driven LEC architectur has appeared in the Formality's white paper </strong> in 2021. 
+      </p>
+      <p class="w3-justify">
+      2013-2018: 1. Cube-and-conquer was proposed for SAT solving: based on this framework, the performance of parallel proofs on some data is better than serial ones; 2. More and more improvement of SAT-based proofs focuses on encoding. 3. Algebra and theory proving has began to be used in the LEC of datapath circuit, especially for proving multiplier. 4. More learning-based proof schemes have been proposed in LEC and MC: a) Adaptive scheme selection has become a general pipeline in many patents and white paper. b) For hard bug finding cases, reinforcement learning and MDP methods have been utilized for path finding. It is worth mentioning that the <strong> first learning-based SAT solver </strong> network, or called NeuroSAT, has been proposed. The basic network consists of two parts, a GNN-based network to get the representation vector, and a classifier to predict. Its aim is to predict whether the problem is SAT or UNSAT. After that, most of the learning-aided SAT solvers follow this architecture. 
+             </p>
+      <p class="w3-justify">
+      From 2019 to now: More and more researches are conducted on <strong> data augmentation </strong>. The key insight is to improve the quality of trained model by improving data diverity and sample complexity. More white papers on industrial verification tool, such as conformal and vso.ai, has claimed the effect of learning methods. Reverse engineering has been utilized in LEC, aiming to improve the proof efficiency of datapath circuit. Kissat has won the SAT competition in 2020. From then on, more and more SAT solvers follow Kissat's architectur. In 2022, the golden SAT solver has used bandit for algorithm selection based on the data structure of the original Kissat.
+        </p> 
 
-	<h4><li>抽象技术</li></h4>
+      <h4><li>Symbolic or Structural?</li></h4>
+            <img style="width: 95%;max-width: 320px" src="images/cnfgeneration.png">
+            <p class="w3-justify">
+      On the one hand, SAT solvers are continuously improving their performance. The latest SAT solvers try to infer possible circuit structure information in CNF, thereby enhancing the correctness of decision-making. SAT solvers serve as the basic engines in industrial EDA, such as ATPG, LEC, MC, routing, etc. This is partly due to the efficiency of symbolic computation in dealing with NP-hard problems, especially the efficient reasoning between Boolean variables. 
+      </p>
+
+      <p class="w3-justify">
+      On the other hand, The SAT problem is completely different from the domain of the EDA problem. The latter is defined on the circuit and often has scene-specific constraints, such as the diagnosis resolution and compression-aware considered in ATPG. In MC, it is often necessary to know the situation of each PO. If it is not found that a PO is unsafety (that is, corresponding to the SAT problem), the solution will be exited. Two bottlenecks often happen in SAT's applications in industrial EDA. 1) Modeling time cost much. Take ATPG as an example, the transformation time from circuit to CNF is usually longer than solving time. 2) Low reasoning efficiency due to the learning-from-mistakes framework. A lot of structural information is too difficult to embed in symbolic expressions. In the research of SAT community, a very important direction is to introduce structural information into expressions through means such as simulation (on RTLIL or netlist) in the early stage.  
+       </p>
+
+      <h4><li>SAT-related Problem in EDA</li></h4>
+      <p class="w3-justify">
+      We have summarized several problems that an efficient SAT-based solution may face, if you are also interested in these problems, welcome to email us.
+       </p>
+
+        <img style="width:94%;" src="images/satproblem.png"> 
+       <ol>
+
+      <p><li> <strong>Effective modeling.</strong> We aim at "effective", not only efficient, the reason lies in the possible loss of structural information of SAT boolean formulas. In this problem, we mainly consider how to preserve the structural properties of the circuit itself, and further effectively identify the implicit constraints that correctly define the search space and put them into the model.  </li></p>
+
+      <p><li> <strong>Adaptive preprocessing.</strong> There is an underlying assumption here that, in a general-purpose solver, a smaller model usually means a relatively higher probability of being efficiently proved UNSAT, or finding a set of legal assignments. Therefore, we always hope to add a suitable pre-solution module between modeling and solving. Neither will it bring a performance burden due to additional calculations, nor will it limit the accuracy of decision-making due to the size of the model. Especially in Model Checking, we found that efficient latch correspondece or retiming and speculation technologies can always relieve the pressure of state explosion to a certain extent, thereby improving the proof or solution performance. </li></p>
+
+      <p><li> <strong> Adaptive distributed solving scheme.</strong> From the perspective of the SAT community, the performance of the SAT solver itself is greatly improved every year. However, in industrial practice, we do find that the solution performance is not always equivalent to the ranking of the SAT competition, and different problems always have their own solvers. How to efficiently use different solvers to complete adaptive parallel or distributed systems is an important problem to be solved urgently. Furthermore, for a hard case, <strong> if any single solver cannot solve it, how to complete an efficient portfolio strategy </strong> through information interaction between different solvers is our top priority. </li></p>
+
+      <p><li> <strong>Efficient simulation.</strong> Here we assume that we always carry out the proof flow from a high-level language to a mathematical/boolean expression. How to obtain important semantic information from higher-level models (such as RTLIL or netlist) and efficiently use semantic information to complete decision-making and search is one of the important research directions. </li></p>
+
+      <p><li> <strong>Effective data augmentation.</strong> We certainly believe that AI can contribute to the solution and proof of SAT. However, we also admit that the current stable application of AI to industrial scenarios faces many challenges such as stability and generalization. How to  <strong> improve the quality of the current training data through data augmentation </strong>, so as to improve sample complexity and enhance generalization, is the first problem to be solved. Many people have already begun to pay attention to this direction. But from the perspective of SAT, the biggest problem we need to face is that <strong> the similarity of the model does not match the similarity of the solution space </strong>. That is to say, we can cite many examples to prove that even if the similarity of the two models has exceeded 99% (for example, only one constraint is inconsistent among the variables of tens of millions of scales), they can be a SAT problem, an UNSAT problem, and a It only takes 10 seconds to solve, while one takes more than 20,000 seconds. How to define an effective measurement to determine the similarity is a priority problem to be solved here. </li></p>
+
+      <p><li> <strong>Pretrained model.</strong> In order to maximize the use of expert knowledge and data, we care whether there can be a pre-trained model to enhance the infrastructure in the current AI-based framework. If possible, we can migrate to different tasks through incremental training in the future, which not only effectively shortens the training time, but also completes information fusion in different directions through the model to make up for the short-sightedness and limitations of expert knowledge in local directions. </li></p>
+
+      <p><li> <strong>Efficient online fine-tuning techniques.</strong> From the perspective generalization, we would like to further enhance the generalization by combining online fun-tuning, so as to improve the prediction accuracy of the model in different scenarios. We consider the appropriate fine-tuning indicators, efficient fine-tuning technology, etc. </li></p>
+
+    </ol>
+        
+  <div class="w3-container w3-light-grey w3-padding-32" id="projects">
+    <h2>Recent Progres</h2>
+  <p class="w3-justify">
+    <p><li> 2021-Incremental SAT-based ATPG framework with simulation-based preprocessing. Considering the effect of scale, we also implemente the cube-and-conquer to improve solving strategy. To improve the modeling efficiency, the fault clustering is also considered. The related paper has been published in ASP-DAC-2021.  </li></p>
+    <p><li> 2022-Generative model, which is armed with partition and merge, has been trained for data augmentation, the  synthetic data is utilized to strenghen the learned NeuroSAT for algorithm selection in ATPG. The related paper has been published in ITC-2022. </li></p>
+    <img style="width:90%;" src="images/ganforatpg.png">
+    <p><li> 2022-Shift-left framework has been utilized in SAT-based ATPG. Conflict-driven Strutural Learning has been implemented in ATPG. The related paper has been published in ETS-2023. </li></p>
+    <p><li> A generalized version on data augmentation is implemented in LEC. In this work, we consider to utilize the perturbation techniques to improve the similarity between synthetic and original data. More than 10% improvement on solving efficiency has been got on multiplier verification. The related paper has been reviewed in KDD-2023. </li></p>
+    <img style="width:96%;" src="images/ganforlec.png">
+    <p><li> A transformer-based learning-aided SAT solver has been implemented. Whether  The related paper has been submited to ICCAD-2023. </li></p>
+    <p><li> Since 2021, the product white papers of many EDA companies have disclosed ML as one of the main selling points of formal verification related products. For example, Formality and Conformal both claim to use the data driven method to realize an adaptive distributed proof method based on multiple solvers. But the solver is primarily viewed as a black box, without any adaptive processing of searching as well as decision methods inside the solver.    </li></p>
+    <p><li> The relationship between structural information and solving efficiency has been discussed from the perspective of representation learning. The related paper has been submited to ICCAD-2023. </li></p>
+      </p>
+  </div>
+	
+  <!-- The Talks Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h2>Survey</h2>
+	<h4><li>NeuroSAT</li></h4>
+	</p>
+	<p class="w3-justify">
+	From 2018 to now: 1. NeuroSAT was proposed in 2018, and almost all learning-based SATs followed this pipeline; 2. In 2019, research work with data augmentation as the core began to appear. In 2022, we will also try to use data augmentation in ATPG and LEC; 3. In 2022, we propose to build a simulate DB from a global perspective, improve simulation quality, and enhance proof performance; 4. Synopsys and Cadence will have multiple formalizations in 2021-2022 The ML-driven framework is one of the main selling points in the verification-related product disclosure materials. But the solver is mainly regarded as a black box, and the main work is used for dynamic scheduling, adaptive solver or algorithm selection.         </p> 
+ 	</p> 
         <img style="width:96%;" src="images/abstract_tech.png">
 
-  </div>
-  
+
+	<h4><li>Neurocore</li></h4>
+	</p>
+	<p class="w3-justify">
+	From 2018 to now: 1. NeuroSAT was proposed in 2018, and almost all learning-based SATs followed this pipeline; 2. In 2019, research work with data augmentation as the core began to appear. In 2022, we will also try to use data augmentation in ATPG and LEC; 3. In 2022, we propose to build a simulate DB from a global perspective, improve simulation quality, and enhance proof performance; 4. Synopsys and Cadence will have multiple formalizations in 2021-2022 The ML-driven framework is one of the main selling points in the verification-related product disclosure materials. But the solver is mainly regarded as a black box, and the main work is used for dynamic scheduling, adaptive solver or algorithm selection.         </p> 
+ 	</p> 
+        <img style="width:96%;" src="images/abstract_tech.png">
+
+	<h4><li>Graph-Q-SAT</li></h4>
+	</p>
+	<p class="w3-justify">
+	From 2018 to now: 1. NeuroSAT was proposed in 2018, and almost all learning-based SATs followed this pipeline; 2. In 2019, research work with data augmentation as the core began to appear. In 2022, we will also try to use data augmentation in ATPG and LEC; 3. In 2022, we propose to build a simulate DB from a global perspective, improve simulation quality, and enhance proof performance; 4. Synopsys and Cadence will have multiple formalizations in 2021-2022 The ML-driven framework is one of the main selling points in the verification-related product disclosure materials. But the solver is mainly regarded as a black box, and the main work is used for dynamic scheduling, adaptive solver or algorithm selection.         </p> 
+ 	</p> 
+        <img style="width:96%;" src="images/abstract_tech.png">
+
+
+	<h4><li>G2SAT</li></h4>
+	</p>
+	<p class="w3-justify">
+	From 2018 to now: 1. NeuroSAT was proposed in 2018, and almost all learning-based SATs followed this pipeline; 2. In 2019, research work with data augmentation as the core began to appear. In 2022, we will also try to use data augmentation in ATPG and LEC; 3. In 2022, we propose to build a simulate DB from a global perspective, improve simulation quality, and enhance proof performance; 4. Synopsys and Cadence will have multiple formalizations in 2021-2022 The ML-driven framework is one of the main selling points in the verification-related product disclosure materials. But the solver is mainly regarded as a black box, and the main work is used for dynamic scheduling, adaptive solver or algorithm selection.        </p> 
+ 	</p> 
+        <img style="width:96%;" src="images/abstract_tech.png">
+
 
   <!-- The Talks Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="talks">
@@ -171,7 +253,6 @@
 	2018年至今：1. 2018年提出NeuroSAT，后续几乎所有learning-based SAT都延续这个pipeline； 2. 2019年开始出现数据增广为核心的研究工作。2022年我们也分别尝试数据增广用于ATPG和LEC中； 3. 2022年提出从全局构建simulate DB，提高simulation质量，增强证明性能； 4. 2021-2022年Synopsys和Cadence分别有多个形式化验证相关的产品公开材料中以ML-driven框架为主要卖点之一。但主要将求解器当成黑盒，而主要工作用于动态调度、自适应求解器 or 算法选择上。         </p> 
  	</p> 
         <img style="width:96%;" src="images/abstract_tech.png">
-
   </div>
 
 
