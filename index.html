@@ -60,10 +60,11 @@
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#news" class="w3-bar-item w3-button">Members</a>
-    <a href="#projects" class="w3-bar-item w3-button">Introduction</a>
-    <a href="#talks" class="w3-bar-item w3-button">Survey</a>
-    <a href="#publications" class="w3-bar-item w3-button">Publication</a>
-    <a href="#service" class="w3-bar-item w3-button">Brainstorm</a>
+    <a href="#Introduction" class="w3-bar-item w3-button">Introduction</a>
+    <a href="#Progress" class="w3-bar-item w3-button">Progress</a>
+    <a href="#Survey" class="w3-bar-item w3-button">Survey</a>
+    <a href="#publications" class="w3-bar-item w3-button">Publications</a>
+    <a href="#brainstorm" class="w3-bar-item w3-button">Brainstorm</a>
     <a href="#award" class="w3-bar-item w3-button">Awards</a>
   </div>
 </nav>
@@ -119,7 +120,7 @@
 
 
 <!-- The Projects Section -->
-  <div class="w3-container w3-padding-32" id="projects">
+  <div class="w3-container w3-padding-32" id="Introduction">
     <h2>SAT in Industrial EDA Problems</h2>
     <p class="w3-justify">
 	    Boolean Satisfiability (or called SAT for short) is the problem of determining if there exists an interpretation that satisfies a given Boolean formula. In other words, it asks whether the variables of a given Boolean formula can be consistently replaced by the values TRUE or FALSE in such a way that the formula evaluates to TRUE. If this is the case, the formula is called satisfiable, otherwise, it is unsatisfiable. Modern SAT solver depends on Conflict-driven Clause Learning (CDCL) algorithm. 
@@ -171,138 +172,125 @@
 
     </ol>
         
-  <div class="w3-container w3-light-grey w3-padding-32" id="projects">
-    <h2>Recent Progres</h2>
+  <div class="w3-container w3-light-grey w3-padding-32" id="Progress">
+    <h2>Recent Progress</h2>
+    
   <p class="w3-justify">
-    <p><li> 2021-Incremental SAT-based ATPG framework with simulation-based preprocessing. Considering the effect of scale, we also implemente the cube-and-conquer to improve solving strategy. To improve the modeling efficiency, the fault clustering is also considered. The related paper has been published in ASP-DAC-2021.  </li></p>
-    <p><li> 2022-Generative model, which is armed with partition and merge, has been trained for data augmentation, the  synthetic data is utilized to strenghen the learned NeuroSAT for algorithm selection in ATPG. The related paper has been published in ITC-2022. </li></p>
+    <p><li> 2021-Incremental SAT-based ATPG framework with simulation-based preprocessing. Considering the effect of scale, we also implemente the cube-and-conquer to improve solving strategy. To improve the modeling efficiency, the fault clustering is also considered. The related paper has been published in ASP-DAC-2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9712573">paper</a>.  </li></p>
+    <p><li> 2022-Generative model, which is armed with partition and merge, has been trained for data augmentation, the  synthetic data is utilized to strenghen the learned NeuroSAT for algorithm selection in ATPG. The related paper has been published in ITC-2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9983862">paper</a>. </li></p>
     <img style="width:90%;" src="images/ganforatpg.png">
-    <p><li> 2022-Shift-left framework has been utilized in SAT-based ATPG. Conflict-driven Strutural Learning has been implemented in ATPG. The related paper has been published in ETS-2023. </li></p>
-    <p><li> A generalized version on data augmentation is implemented in LEC. In this work, we consider to utilize the perturbation techniques to improve the similarity between synthetic and original data. More than 10% improvement on solving efficiency has been got on multiplier verification. The related paper has been reviewed in KDD-2023. </li></p>
-    <img style="width:96%;" src="images/ganforlec.png">
-    <p><li> A transformer-based learning-aided SAT solver has been implemented. Whether  The related paper has been submited to ICCAD-2023. </li></p>
-    <p><li> Since 2021, the product white papers of many EDA companies have disclosed ML as one of the main selling points of formal verification related products. For example, Formality and Conformal both claim to use the data driven method to realize an adaptive distributed proof method based on multiple solvers. But the solver is primarily viewed as a black box, without any adaptive processing of searching as well as decision methods inside the solver.    </li></p>
-    <p><li> The relationship between structural information and solving efficiency has been discussed from the perspective of representation learning. The related paper has been submited to ICCAD-2023. </li></p>
+
+    <p><li> 2022-Shift-left framework has been utilized in SAT-based ATPG. Conflict-driven Strutural Learning has been implemented in ATPG. The related paper has been published in ETS-2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2303.02290.pdf">paper</a>. </li></p>
+    <img style="width:90%;" src="images/conflict_driven_atpg.png">
+
+    <p><li> 2022-A generalized version on data augmentation is implemented in LEC. In this work, we consider to utilize the perturbation techniques to improve the similarity between synthetic and original data. More than 10% improvement on solving efficiency has been got on multiplier verification. The related paper has been reviewed in KDD-2023. </li></p>
+    <img style="width:92%;" src="images/ganforlec.png">
+
+    <p><li> 2022-A transformer-based learning-aided SAT solver, SATformer, has been implemented. Different from the NeuroSAT pipeline, a hierarchical Transformer architecture is applied on the clause embeddings to capture the relationships among clauses, and the self-attention weight is learned to be high when those clauses forming UNSAT cores are attended together, and set to be low otherwise. The related paper has been submited to ICCAD-2023. </li></p>
+
+    <p><li> 2023-Functionality-aware Circuit Learning Model has been completed. The model is trained to predict the functional similarity between node pairs within the same circuit. Several keypoints are considered here. 1) A functionality-aware loss function is constructed to minimize the error between pairwise truth table hamming distance and node embedding distance. 2) The node embedding distance is calculated based on the cosine similarity of two node embedding vectors. 3) A one-round GNN is trained for both structural and functional features, and to improve the training efficiency, we assign several orthogonal vectors as the initial embeddings for PIs. An intuitive explanation should be that the purpose is to determine whether two nodes are reconvergent by recording whether they share one or multiple common PIs. The related paper has been submited to ICCAD-2023. </li></p>
       </p>
   </div>
 	
   <!-- The Talks Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h2>Survey</h2>
-	<h4><li>NeuroSAT</li></h4>
-	</p>
+  <div class="w3-container w3-padding-32" id="Survey">
+  <h2>Survey</h2>
+
+	<h4><li>NeuroSAT and learning-aided SAT Pipeline</li></h4>
 	<p class="w3-justify">
-	From 2018 to now: 1. NeuroSAT was proposed in 2018, and almost all learning-based SATs followed this pipeline; 2. In 2019, research work with data augmentation as the core began to appear. In 2022, we will also try to use data augmentation in ATPG and LEC; 3. In 2022, we propose to build a simulate DB from a global perspective, improve simulation quality, and enhance proof performance; 4. Synopsys and Cadence will have multiple formalizations in 2021-2022 The ML-driven framework is one of the main selling points in the verification-related product disclosure materials. But the solver is mainly regarded as a black box, and the main work is used for dynamic scheduling, adaptive solver or algorithm selection.         </p> 
- 	</p> 
-        <img style="width:96%;" src="images/abstract_tech.png">
+    <ol>
+    <p><li> The first learning-aided SAT solver, <a style="color: #447ec9" href="https://github.com/dselsam/neurosat"><strong> NeuroSAT </strong></a>,  has been proposed in 2018. Its core is a message passing neural network that learns to solve SAT problems after only being trained as a classifier to predict satisfiability. The trained network learns to detect the contradictions instead of searching for satisfying assignments. When the number of variables involved in the contradiction is small relative to the total number of variables, knowing which variables are involved in the contradiction can enable constructing a resolution proof more efficiently. </li></p>
+    <img style="width:90%;" src="images/neurosat.png">
 
+    <p><li> The generalized form, <a style="color: #447ec9" href="https://github.com/dselsam/neurocore-public"><strong> NeuroCore </strong></a>, is trained to predict the unsatisfiable cores of UNSAT problems. The predicted results, how likely the variables are to appear in an unsatisfiable core, are periodically used to replace the variable activity scores in SAT solvers.  </li></p>
+    <img style="width:90%;" src="images/neurocore.png">
 
-	<h4><li>Neurocore</li></h4>
-	</p>
-	<p class="w3-justify">
-	From 2018 to now: 1. NeuroSAT was proposed in 2018, and almost all learning-based SATs followed this pipeline; 2. In 2019, research work with data augmentation as the core began to appear. In 2022, we will also try to use data augmentation in ATPG and LEC; 3. In 2022, we propose to build a simulate DB from a global perspective, improve simulation quality, and enhance proof performance; 4. Synopsys and Cadence will have multiple formalizations in 2021-2022 The ML-driven framework is one of the main selling points in the verification-related product disclosure materials. But the solver is mainly regarded as a black box, and the main work is used for dynamic scheduling, adaptive solver or algorithm selection.         </p> 
- 	</p> 
-        <img style="width:96%;" src="images/abstract_tech.png">
+    <p><li> Reinforcement learning has been first utilized for improving SAT in <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2020/file/6d70cb65d15211726dcce4c0e971e21c-Paper.pdf"><strong> Graph-Q-SAT </strong></a>. It uses a graph representation of SAT problems similar as NeuroSAT, which provides permutation and variable relabeling invariance. The update process is based on a trained DQN, which is a value-based RL algorithm that approximates an optimal Q-function. Hereby, the action-value function is used to estimate the sum of future rewards after taking an action a in state s and following an optimal policy thereafter. </li></p>
+    <p><li> Since 2021, many testing and verification products have been armed with AI methods, featuring machine learning technology and core formal technology enhancements. For example, Formality and Conformal both claim to use the data driven method to realize an adaptive distributed proof method based on multiple solvers. Jasergold claims to utlilize AI method to select and parameterize solvers to enable faster first-time proofs. Meanwhile, machine learning is used to optimize successive runs for regression testing, either on premises or in the cloud. But the solver is primarily viewed as a black box, without any adaptive processing of searching as well as decision methods inside the solver.  </li></p>
 
-	<h4><li>Graph-Q-SAT</li></h4>
-	</p>
-	<p class="w3-justify">
-	From 2018 to now: 1. NeuroSAT was proposed in 2018, and almost all learning-based SATs followed this pipeline; 2. In 2019, research work with data augmentation as the core began to appear. In 2022, we will also try to use data augmentation in ATPG and LEC; 3. In 2022, we propose to build a simulate DB from a global perspective, improve simulation quality, and enhance proof performance; 4. Synopsys and Cadence will have multiple formalizations in 2021-2022 The ML-driven framework is one of the main selling points in the verification-related product disclosure materials. But the solver is mainly regarded as a black box, and the main work is used for dynamic scheduling, adaptive solver or algorithm selection.         </p> 
- 	</p> 
-        <img style="width:96%;" src="images/abstract_tech.png">
+  </ol>
+        
+	<h4><li>Data Augmentation and Generative Models </li></h4>
+	<ol>
+	<p><li> The first implicit model that generates Boolean Satisfiability formulas which resemble instances that arise in real-world industrial settings has been present, <a style="color: #447ec9" href="https://ojs.aaai.org/index.php/SOCS/article/view/18493"><strong> Learning to generate SAT instance </strong></a>. It uses the unsupervised techniques to create new formulas by mimicking the structural properties of a given input formula. There are two phases. A Literal Incidence Graph (LIG) has been firstly constructed, and Generative Adversarial Network is trained to generate new LIGs that exhibit graph-theoretic properties similarly. Secondly, the generated graph is extracted to finding a minimal clique edge cover of the given graph, which we tackle efficiently using a greedy hill-climbing algorithm. </li></p>
 
+  <p><li> To tackle with the large scale, <a style="color: #447ec9" href="https://snap.stanford.edu/g2sat/"><strong> G-SAT </strong></a> has been proposed. The key insight is that any bipartite graph can be generated by starting with a set of trees, and then applying a sequence of node merging operations over the nodes from one of the two partitions. As we merge nodes, trees are also merged, and complex bipartite structures begin to appear. In this manner, a set of input bipartite graphs (SAT formulas) can be characterized by a distribution over the sequence of node merging operations. The G2SAT is trained via such a process. </li></p>
 
-	<h4><li>G2SAT</li></h4>
-	</p>
-	<p class="w3-justify">
-	From 2018 to now: 1. NeuroSAT was proposed in 2018, and almost all learning-based SATs followed this pipeline; 2. In 2019, research work with data augmentation as the core began to appear. In 2022, we will also try to use data augmentation in ATPG and LEC; 3. In 2022, we propose to build a simulate DB from a global perspective, improve simulation quality, and enhance proof performance; 4. Synopsys and Cadence will have multiple formalizations in 2021-2022 The ML-driven framework is one of the main selling points in the verification-related product disclosure materials. But the solver is mainly regarded as a black box, and the main work is used for dynamic scheduling, adaptive solver or algorithm selection.        </p> 
- 	</p> 
-        <img style="width:96%;" src="images/abstract_tech.png">
+  <img style="width:90%;" src="images/g2sat.png">
 
+  <p><li> To further tackle with the difference between structural similary and searching path, our paper HardSATGEN has been submited to KDD-2023. The related experiments have been conducted on LEC, and more than 10% improvement on solving efficiency has been obtained. More details will be given after publishment. </li></p>
+ 	</ol> 
 
-  <!-- The Talks Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="talks">
-    <h2>Survey</h2>
-	<h4><li>NeuroSAT</li></h4>
-	</p>
-	<p class="w3-justify">
-	2018年至今：1. 2018年提出NeuroSAT，后续几乎所有learning-based SAT都延续这个pipeline； 2. 2019年开始出现数据增广为核心的研究工作。2022年我们也分别尝试数据增广用于ATPG和LEC中； 3. 2022年提出从全局构建simulate DB，提高simulation质量，增强证明性能； 4. 2021-2022年Synopsys和Cadence分别有多个形式化验证相关的产品公开材料中以ML-driven框架为主要卖点之一。但主要将求解器当成黑盒，而主要工作用于动态调度、自适应求解器 or 算法选择上。         </p> 
- 	</p> 
-        <img style="width:96%;" src="images/abstract_tech.png">
+  <h4><li>Seletect Patent </li></h4>
+  <ol>
+  <p><li> (Synopsys-2013)-<strong>Formal Verification Result Prediction</strong>. The first patent for data-driven algorithm selection and proving strategy order prediction. The feature is extracted from AIG data, clause graph as well as propagation features, learnt clause features, etc. The scheduling includes an order for executing the verification engines on a specific design problem where the order may be determined based on the feature data. </li></p>
+  <img style="width:90%;" src="images/patent_select_formal.png">
 
+  <p><li> (Intel-1999)-<strong> Method and apparatus for scan design using a formal verification based process</strong>. The key point here is that ATPG works as a basic engine for model checking. The whole method also includes reading one or more vector generation targets, and performing word-level ATPG justification on the control logic component to obtain a control logic solution. The method further includes extracting one or more arithmetic functions for the datapath logic component based on the control logic Solution, and solving the one or more arithmetic functions using a modular constraint solver. </li></p>
 
-	<h4><li>Neurocore</li></h4>
-	</p>
-	<p class="w3-justify">
-	2018年至今：1. 2018年提出NeuroSAT，后续几乎所有learning-based SAT都延续这个pipeline； 2. 2019年开始出现数据增广为核心的研究工作。2022年我们也分别尝试数据增广用于ATPG和LEC中； 3. 2022年提出从全局构建simulate DB，提高simulation质量，增强证明性能； 4. 2021-2022年Synopsys和Cadence分别有多个形式化验证相关的产品公开材料中以ML-driven框架为主要卖点之一。但主要将求解器当成黑盒，而主要工作用于动态调度、自适应求解器 or 算法选择上。         </p> 
- 	</p> 
-        <img style="width:96%;" src="images/abstract_tech.png">
+  <p><li> (Synopsys-2021)-<strong> Accelerate formal property verification across design versions using sequential equivalence checking (SEC) </strong>. Using SEC techniques to improve formal property verification. Smart decomposition is conducted and the proving is in an incremental manner. Order is designed in proving different properties, for making most use of semantic information. </li></p>
+  <img style="width:90%;" src="images/sec4fpv.png">
 
-
-	<h4><li>Graph-Q-SAT</li></h4>
-	</p>
-	<p class="w3-justify">
-	2018年至今：1. 2018年提出NeuroSAT，后续几乎所有learning-based SAT都延续这个pipeline； 2. 2019年开始出现数据增广为核心的研究工作。2022年我们也分别尝试数据增广用于ATPG和LEC中； 3. 2022年提出从全局构建simulate DB，提高simulation质量，增强证明性能； 4. 2021-2022年Synopsys和Cadence分别有多个形式化验证相关的产品公开材料中以ML-driven框架为主要卖点之一。但主要将求解器当成黑盒，而主要工作用于动态调度、自适应求解器 or 算法选择上。         </p> 
- 	</p> 
-        <img style="width:96%;" src="images/abstract_tech.png">
-
-
-	<h4><li>G2SAT</li></h4>
-	</p>
-	<p class="w3-justify">
-	2018年至今：1. 2018年提出NeuroSAT，后续几乎所有learning-based SAT都延续这个pipeline； 2. 2019年开始出现数据增广为核心的研究工作。2022年我们也分别尝试数据增广用于ATPG和LEC中； 3. 2022年提出从全局构建simulate DB，提高simulation质量，增强证明性能； 4. 2021-2022年Synopsys和Cadence分别有多个形式化验证相关的产品公开材料中以ML-driven框架为主要卖点之一。但主要将求解器当成黑盒，而主要工作用于动态调度、自适应求解器 or 算法选择上。         </p> 
- 	</p> 
-        <img style="width:96%;" src="images/abstract_tech.png">
-  </div>
-
-
+  <p><li> (Synopsys-2021)-<strong> Automated debug of falsified power-aware formal properties using static checker results</strong>. A power intent specification specifies the desired power intent for a design of an integrated circuit , for example the states of the power domains under different conditions . Power-aware formal properties describe desired behaviors specified by the power intent specification. In addition, a debug context database contains debug contexts for static-check violations resulting from power-aware static checking of the design. Static checking checks for compliance with the power intent specification based on a static structure of the design. </li></p>
+  <img style="width:50%;" src="images/estimation_before_mc.png">
+  
+  </ol>
+        
  <!-- The Publications Section -->
   <div class="w3-container w3-padding-32"" id="publications">
     <h2>Publication</h2>
       <p class="w3-left-align" style="line-height:200%">
-	Introduce our works.
+	Some of our works on optimization techniques and AI-related methods.
       </p>
-    <h4> AI for SAT:</h4>
+    <h4> Optimization for Industrial EDA:</h4>
 
     <ol>
 
       <p>
-      <li><strong>Spatial-Channel Token Distillation for Vision MLPs</strong>
-      <br>
-      Yanxi Li, Xinghao Chen, Minjing Dong, Yehui Tang, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>ICML</em> 2022 | <a style="color: #447ec9" href="https://proceedings.mlr.press/v162/li22c/li22c.pdf">paper</a> 
-      </p>
+      <li><strong>Accelerate sat-based atpg via preprocessing and new conflict management heuristics </strong>
+      <br> Junhua Huang, Hui-Ling Zhen, Naixing Wang, Mingxuan Yuan, Hui Mao, Yu Huang, Jiping Tao <br>
+      <em>ASP-DAC</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9712573">paper</a> </p>
 
       <p>
-      <li><strong>Federated Learning with Positive and Unlabeled Data</strong>
-      <br>
-      Xinyang Lin*, Hanting Chen*, Yixing Xu, Chao Xu, Xiaolin Gui, Yiping Deng, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICML</em> 2022 (* equal contribution) | <a style="color: #447ec9" href="https://proceedings.mlr.press/v162/lin22b/lin22b.pdf">paper</a>
-      </p>
+      <li><strong>Conflict-driven Structural Learning Towards Higher Coverage Rate in ATPG</strong>
+      <br> Hui-Ling Zhen, Naixing Wang, Junhua Huang, Xinyue Huang, Mingxuan Yuan, Yu Huang <br>
+      <em>ETS</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2303.02290.pdf">paper</a> </p>
+
+      <p>
+      <li><strong>A survey for solving mixed integer programming via machine learning</strong>
+      <br> Jiayi Zhang, Chang Liu, Xijun Li, Hui-Ling Zhen, Mingxuan Yuan, Yawen Li, Junchi Yan <br>
+      <em>Neurcomputing</em> 2022 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0925231222014035">paper</a> </p>
+
+      <p>
+      <li><strong>Machine learning methods in solving the boolean satisfiability problem</strong>
+      <br> Wenxuan Guo, Junchi Yan, Hui-Ling Zhen, Xijun Li, Mingxuan Yuan, Yaohui Jin <br>
+      <em>Machine Intelligence Research</em> 2022 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.04755.pdf">paper</a> </p>
 
       </ol>
 
-      <h4> ML for SAT:</h4>
+      <h4> AI-related SAT and Constraint Optimization:</h4>
 
       <ol>
 
       <p>
-      <li><strong>GhostNets on Heterogeneous Devices via Cheap Operations</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Chang Xu, Jianyuan Guo, Chunjing Xu, Enhua Wu, Qi Tian 
-      <br>
-      <em>IJCV</em> 2022 | <a style="color: #447ec9" href="https://link.springer.com/content/pdf/10.1007/s11263-022-01575-y.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/ghostnet_d">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Efficient-AI-Backbones">Pytorch code</a>
-      </p>
+      <li><strong>Neural Fault Analysis for SAT-based ATPG</strong>
+      <br> Junhua Huang, Hui-Ling Zhen, Naixing Wang, Hui Mao, Mingxuan Yuan, Yu Huang <br>
+      <em>ITC</em> 2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9983862">paper</a> </p>
 
       <p>
-      <li><strong>A Survey on Visual Transformer</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Hanting Chen, Xinghao Chen, Jianyuan Guo, Zhenhua Liu, Yehui Tang, An Xiao, Chunjing Xu, Yixing Xu, Zhaohui Yang, Yiman Zhang, Dacheng Tao
-      <br>
-      <em>IEEE TPAMI</em> 2022 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2012.12556">paper</a> 
-      </p>
+      <li><strong>Learning to select cuts for efficient mixed-integer programming</strong>
+      <br> Zeren Huang, Kerong Wang, Furui Liu, Hui-Ling Zhen, Weinan Zhang, Mingxuan Yuan, Jianye Hao, Yong Yu, Jun Wang <br>
+      <em>Pattern Recognition</em> 2022 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0031320321005331">paper</a> </p>
+
+      <p>
+      <li><strong>Branch Ranking for Efficient Mixed-Integer Programming via Offline Ranking-Based Policy Learning</strong>
+      <br> Zeren Huang, Wenhao Chen, Weinan Zhang, Chuhan Shi, Furui Liu, Hui-Ling Zhen, Mingxuan Yuan, Jianye Hao, Yong Yu, Jun Wang <br>
+      <em>ECML-PKDD</em> 2022 | <a style="color: #447ec9" href="https://2022.ecmlpkdd.org/wp-content/uploads/2022/09/sub_543.pdf">paper</a> </p>
+
+      <p>
+      <li><strong>Pareto multi-task learning</strong>
+      <br> Xi Lin, Hui-Ling Zhen, Zhenhua Li, Qing-Fu Zhang, Sam Kwong <br>
+      <em>NeurIPS</em> 2019 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2019/file/685bfde03eb646c27ed565881917c71c-Paper.pdf">paper</a> </p>
 
       </ol>
 
@@ -310,25 +298,25 @@
   </div>
 
  <!-- The BrainStorm Section -->												  
- <div class="w3-container w3-light-grey w3-padding-32" id="brainstorm">
+ <div class="w3-container w3-light-grey w3-padding-32" id="N=brainstorm">
     <h2>Brainstorm</h2>
-      <p><li> Area Chair of <a href="https://icml.cc/Conferences/2023">ICML 2021</a>, <a href="https://nips.cc/Conferences/2022/">NeurIPS 2022</a>, <a href="https://icml.cc/Conferences/2021">ICML 2021</a>, <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</p>
-      <p><li> Action Editor of <a href="https://jmlr.org/tmlr/">TMLR</a> (Transactions on Machine Learning Research).</p>
-      <p><li> Senior Program Committee Members of <a href="https://ijcai-21.org/">IJCAI 2021</a>, <a href="https://www.ijcai20.org/">IJCAI 2020</a> and <a href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
-      <p><li> Journal Reviewers of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE T-PAMI</a>, <a href="https://www.springer.com/journal/11263">IJCV</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE T-IP</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE T-KDE</a>, etc.</p>
-      <p><li> Program Committee Members of ICCV 2021, AAAI 2021, ICLR 2021, NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
+      <p><li> Both algorithm selection and solver recomendation can be implemented in industrial formal verification.</p> 
+
+      <p><li> Incremental verification based on the property and simulated constraints is tried on model checking.</p> 
+
+      <p><li> Fault clustering-based parallel framework and multi-target pattern generation can be both contributed to the pattern property and solving efficiency.</p> 
   </div>
 
   <!-- The Awards Section -->
   <div class="w3-container w3-padding-32" id="award">
     <h2>Awards</h2>
-    <p><li> 2020, <a href="https://mp.weixin.qq.com/s/dORL01lgFNDHgjp3KMJmiQ">Nomination for Outstanding Youth Paper Award</a>, <a href="https://worldaic.com.cn/portal/en/aboutus.html">WAIC</a></p>               
-    <p><li> 2017, <a href="https://research.google/outreach/phd-fellowship/recipients/?category=2017">Google PhD Fellowship</a></p>
+    <p><li> 2022-All of us are part of the Gold Medal Team, in Huawei. </a></p>               
+  
   </div>  
 
   <div class="w3-light-grey w3-center w3-padding-24">
 
-    Welcome to use this website's <a href="https://github.com/YunheWang/HomePage">source code</a>, just add a link back to here. <a href="https://www.wangyunhe.site/">&#10025;</a></br>
+    Welcome to use this website's <a href="https://github.com/ai4verification/ai4verification.github.io">source code</a>, just add a link back to here. <a href="https://github.com/ai4verification/ai4verification.github.io">&#10025;</a></br>
 
   <!-- Default Statcounter code for Yunhe Wang's Homepage
   https://www.wangyunhe.site -->
