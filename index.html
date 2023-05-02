@@ -61,8 +61,8 @@
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#news" class="w3-bar-item w3-button">Members</a>
     <a href="#Introduction" class="w3-bar-item w3-button">Introduction</a>
-    <a href="#Survey" class="w3-bar-item w3-button">Survey</a>
     <a href="#Progress" class="w3-bar-item w3-button">Progress</a>
+    <a href="#Survey" class="w3-bar-item w3-button">Survey</a>
     <a href="#publications" class="w3-bar-item w3-button">Publications</a>
     <a href="#brainstorm" class="w3-bar-item w3-button">Brainstorm</a>
     <a href="#award" class="w3-bar-item w3-button">Awards</a>
@@ -110,12 +110,13 @@
       <p><li> Dr. Lihao Yin | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=bS9oH_oAAAAJ&hl=en">google scholar</a>: PhD on Applied mathematics and statistics. Now he is working on incremental MC algorithms, property grouping-based verification, latch correspondence, fix-point algorithm in PDR and word-level verification, etc. </li></p>
       <p><li> Wanqian Luo | <a style="color: #447ec9" href="https://github.com/">Github</a>: luowanqian Master in CS. Now he is working on circuit SAT, parallel SAT solving, bandit for clause sharing, incremental LEC,adaptive modeling in LEC, etc. </li></p>
       <p><li> Junhua Huang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=pFOIOJ0AAAAJ&hl=zh-CN">google scholar</a>: Master in combinatorial optimization. Now she is working on efficient reverse simulation in SAT sweeping, and related application in logic synthesis and LEC. </li></p>
+      <p><li> Chan Tsz Ho | <a style="color: #447ec9" href="https://www.linkedin.com/in/tsz-ho-chan-320015233/?originalSubdomain=hk">Linkedin</a>: Master in Computer Science, HKUST. Now he is working on graph model and representation learning, and their applications in SAT solving and equivalence checking. </li></p>
 
- <h4><li>Some of our gifted partners and friends:</li></h4>
-      <p><li> Prof. Jianye Hao | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=FCJVUYgAAAAJ&hl=zh-CN">google scholar</a>: PhD on reinforcement learning and multi-agent system. He also has research experience on multi-agent model checking. Now he is the director of decision and reasoning lab of Noah's Ark Lab, Huawei. </li></p>
-      <p><li> Dr. Jia Zeng | <a style="color: #447ec9" href="https://dblp.org/pid/31/435.html">DBLP</a>: PhD on machine learning. He also has industrial experience on operation research and supply chain management. Now he is a program manager in Noah's Ark Lab, Huawei. </li></p>
+ <h4><li>Some of our kindly partners:</li></h4>
+      <p><li> Prof. Jianye Hao | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=FCJVUYgAAAAJ&hl=zh-CN">google scholar</a>: PhD on reinforcement learning and multi-agent system. Now he is the director of decision and reasoning lab of Noah's Ark Lab, Huawei. </li></p>
+      <p><li> Dr. Jia Zeng | <a style="color: #447ec9" href="https://dblp.org/pid/31/435.html">DBLP</a>: PhD on machine learning. He also has industrial experience on operation research and supply chain management. Now he is a project manager in Noah's Ark Lab, Huawei. </li></p>
       <p><li> Dr. Yu Huang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=acPTiEQAAAAJ&hl=en">google scholar</a>: PhD on DFT, and more than 20 years experience on industrial DFT, such as diagnosis, compression, compaction, scan chain test, etc. </li></p>
-      <p><li> Dr. Naixing Wang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=c_R21V8AAAAJ&hl=en">google scholar</a>: PhD on DFT. Years of experience on industrial DFT, such as ATPG, TPI, test compaction, compression, etc. </li></p>
+      <p><li> Dr. Naixing Wang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=c_R21V8AAAAJ&hl=en">google scholar</a>: PhD on DFT. Several years experience on industrial DFT, such as ATPG, TPI, etc. </li></p>
       <p><li> Yingxue Zhang | <a style="color: #447ec9" href="https://scholar.google.com/citations?user=4bsYpogAAAAJ&hl=en">google scholar</a>: Years of experience on graph networks and representation learning.  </li></p>
   </div>
 
@@ -173,8 +174,27 @@
 
     </ol>
         
-	  
-	  <!-- The Talks Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="Progress">
+    <h2>Recent Progress</h2>
+    
+  <p class="w3-justify">
+    <p><li> 2021-Incremental SAT-based ATPG framework with simulation-based preprocessing. Considering the effect of scale, we also implemente the cube-and-conquer to improve solving strategy. To improve the modeling efficiency, the fault clustering is also considered. The related paper has been published in ASP-DAC-2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9712573">paper</a>.  </li></p>
+    <p><li> 2022-Generative model, which is armed with partition and merge, has been trained for data augmentation, the  synthetic data is utilized to strenghen the learned NeuroSAT for algorithm selection in ATPG. The related paper has been published in ITC-2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9983862">paper</a>. </li></p>
+    <img style="width:90%;" src="images/ganforatpg.png">
+
+    <p><li> 2022-Shift-left framework has been utilized in SAT-based ATPG. Conflict-driven Strutural Learning has been implemented in ATPG. The related paper has been published in ETS-2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2303.02290.pdf">paper</a>. </li></p>
+    <img style="width:90%;" src="images/conflict_driven_atpg.png">
+
+    <p><li> 2022-A generalized version on data augmentation is implemented in LEC. In this work, we consider to utilize the perturbation techniques to improve the similarity between synthetic and original data. More than 10% improvement on solving efficiency has been got on multiplier verification. The related paper has been reviewed in KDD-2023. </li></p>
+    <img style="width:96%;" src="images/ganforlec.png">
+
+    <!-- <p><li> 2022-A transformer-based learning-aided SAT solver, SATformer, has been implemented. Different from the NeuroSAT pipeline, a hierarchical Transformer architecture is applied on the clause embeddings to capture the relationships among clauses, and the self-attention weight is learned to be high when those clauses forming UNSAT cores are attended together, and set to be low otherwise. The related paper has been submited to ICCAD-2023. </li></p> -->
+
+    <!-- <p><li> 2023-Functionality-aware Circuit Learning Model has been completed. The model is trained to predict the functional similarity between node pairs within the same circuit. Several keypoints are considered here. 1) A functionality-aware loss function is constructed to minimize the error between pairwise truth table hamming distance and node embedding distance. 2) The node embedding distance is calculated based on the cosine similarity of two node embedding vectors. 3) A one-round GNN is trained for both structural and functional features, and to improve the training efficiency, we assign several orthogonal vectors as the initial embeddings for PIs. An intuitive explanation should be that the purpose is to determine whether two nodes are reconvergent by recording whether they share one or multiple common PIs. The related paper has been submited to ICCAD-2023. </li></p>
+      </p> -->
+  </div>
+	
+  <!-- The Talks Section -->
   <div class="w3-container w3-padding-32" id="Survey">
   <h2>Survey</h2>
 
@@ -188,10 +208,12 @@
     <img style="width:90%;" src="images/neurocore.png">
 
     <p><li> Reinforcement learning has been first utilized for improving SAT in <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2020/file/6d70cb65d15211726dcce4c0e971e21c-Paper.pdf"><strong> Graph-Q-SAT </strong></a>. It uses a graph representation of SAT problems similar as NeuroSAT, which provides permutation and variable relabeling invariance. The update process is based on a trained DQN, which is a value-based RL algorithm that approximates an optimal Q-function. Hereby, the action-value function is used to estimate the sum of future rewards after taking an action a in state s and following an optimal policy thereafter. </li></p>
+
     <p><li> Since 2021, many testing and verification products have been armed with AI methods, featuring machine learning technology and core formal technology enhancements. For example, Formality and Conformal both claim to use the data driven method to realize an adaptive distributed proof method based on multiple solvers. Jasergold claims to utlilize AI method to select and parameterize solvers to enable faster first-time proofs. Meanwhile, machine learning is used to optimize successive runs for regression testing, either on premises or in the cloud. But the solver is primarily viewed as a black box, without any adaptive processing of searching as well as decision methods inside the solver.  </li></p>
 
   </ol>
         
+
 	<h4><li>Data Augmentation and Generative Models </li></h4>
 	<ol>
 	<p><li> The first implicit model that generates Boolean Satisfiability formulas which resemble instances that arise in real-world industrial settings has been present, <a style="color: #447ec9" href="https://ojs.aaai.org/index.php/SOCS/article/view/18493"><strong> Learning to generate SAT instance </strong></a>. It uses the unsupervised techniques to create new formulas by mimicking the structural properties of a given input formula. There are two phases. A Literal Incidence Graph (LIG) has been firstly constructed, and Generative Adversarial Network is trained to generate new LIGs that exhibit graph-theoretic properties similarly. Secondly, the generated graph is extracted to finding a minimal clique edge cover of the given graph, which we tackle efficiently using a greedy hill-climbing algorithm. </li></p>
@@ -217,30 +239,10 @@
   <img style="width:50%;" src="images/estimation_before_mc.png">
   
   </ol>
-	  
-	  
-  <div class="w3-container w3-light-grey w3-padding-32" id="Progress">
-    <h2>Recent Progress</h2>
-    
-  <p class="w3-justify">
-    <p><li> 2021-Incremental SAT-based ATPG framework with simulation-based preprocessing. Considering the effect of scale, we also implemente the cube-and-conquer to improve solving strategy. To improve the modeling efficiency, the fault clustering is also considered. The related paper has been published in ASP-DAC-2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9712573">paper</a>.  </li></p>
-    <p><li> 2022-Generative model, which is armed with partition and merge, has been trained for data augmentation, the  synthetic data is utilized to strenghen the learned NeuroSAT for algorithm selection in ATPG. The related paper has been published in ITC-2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9983862">paper</a>. </li></p>
-    <img style="width:90%;" src="images/ganforatpg.png">
-
-    <p><li> 2022-Shift-left framework has been utilized in SAT-based ATPG. Conflict-driven Strutural Learning has been implemented in ATPG. The related paper has been published in ETS-2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2303.02290.pdf">paper</a>. </li></p>
-    <img style="width:90%;" src="images/conflict_driven_atpg.png">
-
-    <p><li> 2022-A generalized version on data augmentation is implemented in LEC. In this work, we consider to utilize the perturbation techniques to improve the similarity between synthetic and original data. More than 10% improvement on solving efficiency has been got on multiplier verification. The related paper has been reviewed in KDD-2023. </li></p>
-    <img style="width:92%;" src="images/ganforlec.png">
-
-    <p><li> 2022-A transformer-based learning-aided SAT solver, SATformer, has been implemented. Different from the NeuroSAT pipeline, a hierarchical Transformer architecture is applied on the clause embeddings to capture the relationships among clauses, and the self-attention weight is learned to be high when those clauses forming UNSAT cores are attended together, and set to be low otherwise. The related paper has been submited to ICCAD-2023. </li></p>
-
-    <p><li> 2023-Functionality-aware Circuit Learning Model has been completed. The model is trained to predict the functional similarity between node pairs within the same circuit. Several keypoints are considered here. 1) A functionality-aware loss function is constructed to minimize the error between pairwise truth table hamming distance and node embedding distance. 2) The node embedding distance is calculated based on the cosine similarity of two node embedding vectors. 3) A one-round GNN is trained for both structural and functional features, and to improve the training efficiency, we assign several orthogonal vectors as the initial embeddings for PIs. An intuitive explanation should be that the purpose is to determine whether two nodes are reconvergent by recording whether they share one or multiple common PIs. The related paper has been submited to ICCAD-2023. </li></p>
-      </p>
-  </div>
-	
-  
         
+  <!-- </div> -->
+
+
  <!-- The Publications Section -->
   <div class="w3-container w3-padding-32"" id="publications">
     <h2>Publication</h2>
@@ -283,6 +285,11 @@
       <em>ITC</em> 2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9983862">paper</a> </p>
 
       <p>
+      <li><strong>Layout Decomposition via Boolean Satisfiability</strong>
+      <br> Hongduo Liu, Peiyu Liao, Mengchuan Zou, Bowen Pang, Xijun Li, Mingxuan Yuan, Tsung-Yi Ho, Bei Yu <br>
+      <em> ACM/IEEE Design Automation Conference (DAC)</em> 2022 | To be appeared online soon </p>
+
+      <p>
       <li><strong>Learning to select cuts for efficient mixed-integer programming</strong>
       <br> Zeren Huang, Kerong Wang, Furui Liu, Hui-Ling Zhen, Weinan Zhang, Mingxuan Yuan, Jianye Hao, Yong Yu, Jun Wang <br>
       <em>Pattern Recognition</em> 2022 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0031320321005331">paper</a> </p>
@@ -303,7 +310,7 @@
   </div>
 
  <!-- The BrainStorm Section -->												  
- <div class="w3-container w3-light-grey w3-padding-32" id="brainstorm">
+ <div class="w3-container w3-light-grey w3-padding-32" id="N=brainstorm">
     <h2>Brainstorm</h2>
       <p><li> Both algorithm selection and solver recomendation can be implemented in industrial formal verification.</p> 
 
@@ -315,8 +322,8 @@
   <!-- The Awards Section -->
   <div class="w3-container w3-padding-32" id="award">
     <h2>Awards</h2>
-    <p><li> 2022-All of us are part of the Gold Medal Team, in Huawei. </a></p>               
-  
+    <p><li> 2022-Company Annual Work Meeting Award-Innovation & Technological Breakthrough Award, Huawei. </a></p>               
+    <p><li> 2022-All of us are part of the Gold Medal Team, Huawei. </a></p>  
   </div>  
 
   <div class="w3-light-grey w3-center w3-padding-24">
